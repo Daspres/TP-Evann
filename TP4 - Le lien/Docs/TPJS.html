@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>TP8 - Les Tableaux</title>
+<link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+
+<h1>TP8 : Les Tableaux</h1>
+<img src="../Image/js.png" alt="js">
+
+<p><a href="../index.html">Accueil</a> | <a href="js.html">Retour</a></p>
+
+<h2>Introduction</h2>
+
+<p>
+Dans ce TP, il est demandé d’écrire des fonctions utilitaires permettant de travailler
+avec un tableau de taille fixe N. Ces fonctions seront réutilisables dans d'autres TP.
+</p>
+
+<p>
+Le tableau utilisé contient N éléments. Il est interdit d’ajouter, d’insérer ou de supprimer
+une case.
+</p>
+
+<code>
+let N = parseInt(prompt("Combien de case pour le tableau ?")); <br>
+let A = new Array(N); <br>
+let nbElemRempli = 0;
+</code>
+
+<hr>
+
+<h2>Méthodologie obligatoire</h2>
+
+<ol>
+<li>Définir la boîte noire (entrées / sorties)</li>
+<li>Coder la fonction dans un fichier JS séparé</li>
+<li>Ajouter le mode d’emploi</li>
+<li>Tester avec l’inspecteur (console)</li>
+</ol>
+
+<hr>
+
+<h2>Exercice 1</h2>
+<p>
+Écrire une fonction <strong>initialiserTab1()</strong> permettant d'initialiser
+les N cases du tableau avec la valeur 0.
+À la fin, toutes les cases sont considérées comme remplies.
+</p>
+
+<h2>Exercice 2</h2>
+<p>
+Écrire une fonction <strong>initialiserTab2(valeur)</strong> permettant d'initialiser
+les N cases avec une valeur passée en paramètre.
+À la fin, toutes les cases sont remplies.
+</p>
+
+<h2>Exercice 3</h2>
+<p>
+Écrire une fonction <strong>remplirTab1(MIN, MAX)</strong> permettant de remplir
+les N cases du tableau avec des valeurs aléatoires comprises entre MIN et MAX.
+Les anciennes valeurs doivent être remplacées.
+</p>
+
+<h2>Exercice 4</h2>
+<p>
+Écrire une fonction <strong>remplirTab2(nb, MIN, MAX)</strong> permettant de remplir
+un certain nombre de cases à partir de la première case vide.
+</p>
+
+<p>
+Si le nombre demandé dépasse la capacité restante du tableau,
+remplir uniquement jusqu’à la fin.
+Aucune case supplémentaire ne doit être ajoutée.
+</p>
+
+<h2>Exercice 5</h2>
+<p>
+Écrire une fonction <strong>afficherTab1()</strong> permettant d'afficher
+seulement les cases remplies du tableau.
+</p>
+
+<h2>Exercice 6</h2>
+<p>
+Écrire une fonction <strong>afficherTab2()</strong> permettant d'afficher
+toutes les cases du tableau, qu'elles soient remplies ou non.
+</p>
+
+<h2>Exercice 7</h2>
+<p>
+Écrire une fonction <strong>afficherTab3(DEB, FIN)</strong> permettant
+d'afficher les cases du tableau entre les positions DEB et FIN incluses.
+</p>
+
+<h2>Exercice 8</h2>
+<p>
+Écrire une fonction <strong>remplirElement(valeur)</strong> permettant
+de remplir la première case vide du tableau.
+</p>
+
+<p>
+Si le tableau est complet, retourner <strong>false</strong>.
+Sinon retourner le nombre d’éléments remplis.
+</p>
+
+<h2>Exercice 9</h2>
+<p>
+Écrire une fonction <strong>saisirTab()</strong> permettant à l’utilisateur
+de saisir lui-même un certain nombre d’éléments.
+</p>
+
+<p>
+Les valeurs sont ajoutées à partir de la première case vide.
+La fonction retourne le nombre de cases remplies.
+</p>
+
+<hr>
+
+<h2>Zone de test</h2>
+
+<p>Ouvrir la console (F12) pour tester les fonctions.</p>
+
+<button onclick="console.log(A)">Afficher le tableau brut</button>
+
+<script src="../Script/tp8_tableaux.js"></script>
+
+</body>
+<link rel="stylesheet" href="../Style/style.css">
+</html>

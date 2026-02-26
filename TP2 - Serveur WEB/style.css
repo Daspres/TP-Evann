@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.cv-container {
+    display: flex;              /* This creates the two columns */
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-column {
+    width: 30%;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.right-column {
+    width: 70%;
+    padding: 20px;
+}

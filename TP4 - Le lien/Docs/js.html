@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Cours JavaScript - Les bases</title>
+<link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+
+<h1 id="sommaire">Langage JavaScript : Les bases</h1>
+
+<p><a href="../index.html">Accueil</a> | <a href="js.html">Retour</a></p>
+
+<hr>
+
+<h2>Sommaire</h2>
+<ul>
+<li><a href="#structure">1. Structure d'un programme</a></li>
+<li><a href="#commentaires">2. Les commentaires</a></li>
+<li><a href="#declarations">3. Déclarations et instructions</a></li>
+<li><a href="#variables">4. Les variables</a></li>
+<li><a href="#memoire">5. Mémoire vive</a></li>
+<li><a href="#types">6. Les types JavaScript</a></li>
+<li><a href="#operateurs">7. Les opérateurs</a></li>
+<li><a href="#entrees">8. Fonctions d'entrée / sortie</a></li>
+</ul>
+
+<hr>
+
+<h2 id="structure">1. Structure de base d’un programme</h2>
+
+<h3>Fichier .js séparé</h3>
+
+<code>
+/* zone d'en-tête */<br>
+/* déclaration des variables globales */<br>
+let a;<br>
+let b;<br>
+<br>
+/* définition des fonctions */<br>
+function maFonction() { }<br>
+<br>
+/* CORPS DU PROGRAMME */<br>
+instruction1;<br>
+instruction2;
+</code>
+
+<p>Il est conseillé de déclarer les variables en début de script.</p>
+
+<h3>JavaScript dans une page HTML</h3>
+
+<code>
+&lt;script&gt;<br>
+ // variables globales et fonctions<br>
+&lt;/script&gt;
+</code>
+
+<p>La balise <code>&lt;script&gt;</code> permet d'ajouter du JavaScript.</p>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="commentaires">2. Les commentaires</h2>
+
+<p>Les commentaires ne sont pas interprétés par le navigateur.</p>
+
+<code>
+// commentaire sur une ligne<br>
+/* commentaire<br>
+   sur plusieurs lignes */
+</code>
+
+<p>Un commentaire d'entête doit préciser auteur, date, description.</p>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="declarations">3. Déclarations et instructions</h2>
+
+<p>Une instruction se termine par un point-virgule <code>;</code>.</p>
+
+<code>
+let a = 3;<br>
+let b = 4;
+</code>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="variables">4. Les variables</h2>
+
+<h3>JavaScript est faiblement typé</h3>
+
+<code>
+let a = 3;<br>
+a = "coucou";
+</code>
+
+<p>Types existants :</p>
+<ul>
+<li>Number</li>
+<li>BigInt</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Object</li>
+<li>Symbol</li>
+</ul>
+
+<h3>Déclaration</h3>
+
+<code>
+let a;<br>
+const b = 4;<br>
+var c = "Bonjour";
+</code>
+
+<p>On privilégie <code>let</code>.</p>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="memoire">5. Mémoire vive</h2>
+
+<p>
+La mémoire vive stocke temporairement les données.
+JavaScript utilise un mécanisme automatique appelé
+<strong>garbage collection</strong>.
+</p>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="types">6. Détails sur les types</h2>
+
+<h3>Number</h3>
+
+<p>Entiers entre -(2^53 -1) et 2^53 -1.</p>
+
+<code>
+let a = 2**53 - 1;<br>
+a = a + 20;
+</code>
+
+<h3>BigInt</h3>
+
+<code>
+let a = 2n**53n - 1n;
+</code>
+
+<h3>String</h3>
+
+<code>
+let a = "Bonjour";<br>
+let b = 'coucou';
+</code>
+
+<h3>Boolean</h3>
+<p>true ou false</p>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="operateurs">7. Les opérateurs</h2>
+
+<h3>Opérateurs arithmétiques</h3>
+
+<code>
++  -  *  /  %  **
+</code>
+
+<h3>Opérateurs logiques</h3>
+
+<code>
+&&  ||  !  ==  !=  &lt;  &gt;  &lt;=  &gt;=
+</code>
+
+<h3>Incrémentation</h3>
+
+<code>
+i++;<br>
+++i;
+</code>
+
+<h3>Affectation conditionnelle</h3>
+
+<code>
+let k = i > j ? 10 : -10;
+</code>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="entrees">8. Fonctions d'entrée / sortie</h2>
+
+<code>
+window.alert("Message");<br>
+let r = window.confirm("Valider ?");<br>
+let x = window.prompt("Entrer une valeur", "0");
+</code>
+
+<p>
+Ces fonctions permettent d'interagir avec l'utilisateur.
+</p>
+
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<h2 id="entrees">9. TP Javascript</h2>
+<a href="TPJS.html">Lien vers le TP Javascript</a>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+
+<hr>
+
+<p>
+<a href="Cours_JavaScript.pdf" download>Télécharger le cours (PDF)</a>
+</p>
+
+<p>
+<a href="mailto:prof@example.com?subject=Cours JavaScript - Les bases">
+Envoyer un mail à l'auteur
+</a>
+</p>
+
+</body>
+</html>
