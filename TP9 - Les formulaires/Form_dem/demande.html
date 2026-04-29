@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Demande de surveillance</title>
+    </head>
+    <body>
+        <h2>Demande de surveillance</h2>
+
+        <form action="../Base_de_donnees/demande.php" method="post">
+            <label>Date de début d'absence :</label><br/>
+            <input type="date" name="date_debut"/><br/><br/>
+
+            <label>Date de fin d'absence :</label><br/>
+            <input type="date" name="date_fin"/><br/><br/>
+
+            <label>Personne à contacter :</label><br/>
+            <input type="text" name="contact"/><br/><br/>
+
+            <label>Téléphone de la personne à contacter :</label><br/>
+            <input type="tel" name="tel_contact"/><br/><br/>
+
+            <button type="submit">Envoyer la demande</button>
+            <button type="reset">Annuler</button>
+        </form>
+    </body>
+</html>

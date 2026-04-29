@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Création de compte</title>
+    </head>
+    <body>
+        <h2>Création d'un compte</h2>
+
+        <form action="../Base_de_donnees/creation.php" method="post">
+            <label for="nom">Nom :</label><br/>
+            <input type="text" name="nom"/><br/><br/>
+
+            <label for="prenom">Prénom :</label><br/>
+            <input type="text" name="prenom"/><br/><br/>
+
+            <label for="adresse">Adresse :</label><br />
+            <input type="text" name="adresse"/><br/><br/>
+
+            <label for="telephone">Téléphone :</label><br/>
+            <input type="tel" name="telephone"/><br/><br/>
+
+            <label for="email">Email :</label><br/>
+            <input type="email" name="email"/><br/><br/>
+
+            <label for="password">Mot de passe :</label><br/>
+            <input type="password" name="password"/><br/><br/>
+
+            <labe for="confirm_password">Confirmation du mot de passe :</label><br/>
+            <input type="password" name="confirm_password"/><br/><br/>
+
+            <button type="submit">Créer le compte</button>
+            <button type="reset">Annuler</button>
+        </form>
+    </body>
+</html>
