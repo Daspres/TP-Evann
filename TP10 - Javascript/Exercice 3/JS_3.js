@@ -1,0 +1,25 @@
+const longueur = document.getElementById("longueur");
+const largeur = document.getElementById("largeur");
+
+window.addEventListener('keydown', function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    if (this.window.confirm("Les valeurs sont-elles les bonnes?")) {
+        const longueurNum = Number(longueur.value);
+        const largeurNum = Number(largeur.value);
+
+        if (Number.isInteger(longueurNum) && Number.isInteger(largeurNum)) {
+            const resultat = longueurNum * largeurNum;
+            console.log("La surface du rectangle est: " + resultat);
+            alert("La surface du rectangle est: " + resultat);
+        } else {
+            this.alert("Veuillez insérer des nombres entiers.");
+            longueur.value = "";
+            largeur.value = "";
+        }
+    } else {
+        longueur.value = "";
+        largeur.value = "";
+    }
+  }
+});
