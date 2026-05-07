@@ -1,11 +1,68 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devis</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <div class="devis">
+
+    <div class="header">
+      <h1>
+        DEVIS
+        <span id="numeroDevis"></span>
+      </h1>
+
+      <div class="infos">
+        <p>Date : <span id="dateDevis"></span></p>
+        <p>Validité : <span id="validiteDevis"></span></p>
+      </div>
+    </div>
+
+    <div class="bloc-client">
+      <div>
+        <h3 id="nomEntreprise"></h3>
+        <p id="adresseEntreprise"></p>
+        <p id="emailEntreprise"></p>
+      </div>
+
+      <div>
+        <h4>CLIENT</h4>
+        <p id="nomClient"></p>
+        <p id="adresseClient"></p>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Prix</th>
+          <th>Qté</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableArticles">
+      </tbody>
+    </table>
+
+    <div class="total">
+      <p>Sous-total : <span id="sousTotal"></span></p>
+      <p>TVA : <span id="tva"></span></p>
+
+      <div class="grand-total">
+        TOTAL : <span id="totalFinal"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="JS_7.js"></script>
 </body>
 </html>
