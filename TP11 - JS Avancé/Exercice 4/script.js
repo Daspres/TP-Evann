@@ -1,6 +1,5 @@
 function calendrier(premierJour, mois, annee, options = {}) {
 
-    // Paramètres par défaut
     const settings = {
         taille: options.taille || "moyen",
         couleurFond: options.couleurFond || "#ffffff",
@@ -8,7 +7,6 @@ function calendrier(premierJour, mois, annee, options = {}) {
         couleurTexte: options.couleurTexte || "#000000"
     };
 
-    // Tableau des mois
     const moisNoms = [
         "Janvier",
         "Février",
@@ -24,10 +22,8 @@ function calendrier(premierJour, mois, annee, options = {}) {
         "Décembre"
     ];
 
-    // Nombre de jours du mois
     const nbJours = new Date(annee, mois, 0).getDate();
 
-    // Création du tableau
     let html = `
         <table class="calendar ${getSizeClass(settings.taille)}"
                style="
@@ -36,7 +32,6 @@ function calendrier(premierJour, mois, annee, options = {}) {
                ">
     `;
 
-    // Titre
     html += `
         <tr>
             <th colspan="7"
@@ -69,17 +64,14 @@ function calendrier(premierJour, mois, annee, options = {}) {
 
     html += "</tr>";
 
-    // Début du calendrier
     let jourActuel = 1;
 
     html += "<tr>";
 
-    // Cases vides avant le 1er jour
     for (let i = 1; i < premierJour; i++) {
         html += "<td></td>";
     }
 
-    // Jours du mois
     for (let i = premierJour; i <= 7; i++) {
         html += `<td>${jourActuel}</td>`;
         jourActuel++;
@@ -87,7 +79,6 @@ function calendrier(premierJour, mois, annee, options = {}) {
 
     html += "</tr>";
 
-    // Lignes suivantes
     while (jourActuel <= nbJours) {
 
         html += "<tr>";
@@ -107,11 +98,9 @@ function calendrier(premierJour, mois, annee, options = {}) {
 
     html += "</table>";
 
-    // Insertion HTML
     document.getElementById("calendar-container").innerHTML = html;
 }
 
-// Gestion des tailles
 function getSizeClass(taille) {
 
     switch(taille) {
