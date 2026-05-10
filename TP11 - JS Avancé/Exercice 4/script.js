@@ -41,7 +41,6 @@ function calendrier(premierJour, mois, annee, options = {}) {
         </tr>
     `;
 
-    // Jours semaine
     const jours = [
         "Lun",
         "Mar",
