@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calendar {
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header */
+.calendar th {
+    color: white;
+}
+
+/* Taille petit */
+.calendar.small th,
+.calendar.small td {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+}
+
+/* Taille moyen */
+.calendar.medium th,
+.calendar.medium td {
+    width: 70px;
+    height: 70px;
+    font-size: 16px;
+}
+
+/* Taille grand */
+.calendar.large th,
+.calendar.large td {
+    width: 100px;
+    height: 100px;
+    font-size: 22px;
+}

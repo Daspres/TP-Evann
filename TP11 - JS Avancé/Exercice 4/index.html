@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier dynamique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calendrier dynamique JavaScript</h1>
+
+    <div id="calendar-container"></div>
+
+    <script src="script.js"></script>
+
+    <script>
+        calendrier(
+            1,          // Premier jour du mois (1 = lundi)
+            4,          // Avril
+            2024,       // Année
+
+            {
+                taille: "moyen",
+                couleurFond: "#ffffff",
+                couleurHeader: "#0077cc",
+                couleurTexte: "#000000"
+            }
+        );
+    </script>
+
+</body>
+</html>
