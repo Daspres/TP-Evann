@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Définition</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Exemple de texte avec définitions</h1>
+
+        <p>
+            Le 
+            <span class="mot" data-word="php">PHP</span> 
+            est un langage très utilisé pour le développement web.
+
+            Le 
+            <span class="mot" data-word="html">HTML</span> 
+            permet de structurer une page web.
+
+            Le 
+            <span class="mot" data-word="css">CSS</span> 
+            sert à mettre en forme les pages internet.
+        </p>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup hidden">
+        <h2 id="popup-title"></h2>
+
+        <img id="popup-image" src="" alt="Image définition">
+
+        <p id="popup-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
